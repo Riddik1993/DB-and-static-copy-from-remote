@@ -18,7 +18,9 @@ and static files of your project on remote server to your local machine
 1. pip install -r requirements.txt
 2. be sure you can connect to your remote server using 
    file with key (/.ssh/id_dsa), not password
-3. specify params in config.conf
-4. run make_db_media_copy.py
+3. specify envs listed in config.conf
+4. be sure your user has rights to write to REMOTE_DBCOPY_PATH
+   (postgres user will be added automatically)
+5. run make_db_media_copy.py
 
 
